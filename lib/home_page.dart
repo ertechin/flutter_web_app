@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
       length: 3,
       child: Scaffold(
           appBar: AppBar(
+            centerTitle: true,
             title: const Text('welcome'),
             bottom: const TabBar(tabs: [
               Tab(icon: Icon(Icons.developer_mode), text: 'projects'),
