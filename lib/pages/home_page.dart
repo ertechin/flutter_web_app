@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_app/pages/blog_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class HomePage extends StatelessWidget {
           body: const TabBarView(
             children: [
               Center(child: Text('soon')),
-              Center(child: Text('soon')),
+              BlogPage(),
               Center(child: Text('soon')),
             ],
           )),
