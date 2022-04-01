@@ -18,11 +18,11 @@ class HomePage extends StatelessWidget {
               Tab(icon: Icon(Icons.person), text: 'about me'),
             ]),
           ),
-          body: const TabBarView(
+          body: TabBarView(
             children: [
-              Center(child: Text('soon')),
+              const Center(child: Text('soon')),
               BlogPage(),
-              Center(child: Text('soon')),
+              const Center(child: Text('soon')),
             ],
           )),
     );
