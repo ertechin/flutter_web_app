@@ -19,7 +19,6 @@ class BlogPageController extends GetxController {
       confirm: TextButton(
           onPressed: () {
             _formKey.currentState!.save();
-            print(_formKey.currentState!.value);
             Get.back(closeOverlays: true);
           },
           child: const Text('yes, I already gave it to everyone.')),
