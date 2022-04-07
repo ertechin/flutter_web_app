@@ -22,9 +22,6 @@ class BlogsCard extends StatelessWidget {
                 ),
                 subtitle: const Text(
                     'DESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESCDESC'),
-                trailing: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.arrow_forward_ios)),
               ),
             ],
           ),

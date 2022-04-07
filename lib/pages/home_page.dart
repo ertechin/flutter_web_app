@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_app/pages/about_page.dart';
 import 'package:flutter_web_app/pages/blog_page.dart';
 import 'package:flutter_web_app/pages/projects_page.dart';
 
@@ -23,11 +24,7 @@ class HomePage extends StatelessWidget {
             ]),
           ),
           body: TabBarView(
-            children: [
-              const ProjectPage(),
-              BlogPage(),
-              const Center(child: Text('soon')),
-            ],
+            children: [const ProjectPage(), BlogPage(), const AboutPage()],
           )),
     );
   }
