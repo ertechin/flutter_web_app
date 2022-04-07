@@ -9,10 +9,65 @@ class ProjectPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-      child: SizedBox(
-          width: context.sizeW * 500,
-          child: const ContextBuilder(widget: ProjectCard(), itemCount: 50)),
+        body: Padding(
+      padding: EdgeInsets.fromLTRB(0, context.sizeH * 16, 0, 0),
+      child: Row(
+        children: [
+          SizedBox(
+              width: context.sizeW * 250,
+              child: Column(
+                children: [
+                  SizedBox(
+                      width: context.sizeW * 200,
+                      height: context.sizeH * 825,
+                      child: Card())
+                ],
+              )),
+          Center(
+            child: SizedBox(
+                width: context.sizeW * 500,
+                child:
+                    const ContextBuilder(widget: ProjectCard(), itemCount: 50)),
+          ),
+          SizedBox(
+              width: context.sizeW * 250,
+              child: Column(
+                children: [
+                  SizedBox(
+                      width: context.sizeW * 200,
+                      height: context.sizeH * 75,
+                      child: Card(
+                          child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.add)),
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.add)),
+                          IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.add)),
+                        ],
+                      ))),
+                  SizedBox(
+                      width: context.sizeW * 200,
+                      height: context.sizeH * 600,
+                      child: Card()),
+                  SizedBox(
+                      width: context.sizeW * 200,
+                      height: context.sizeH * 100,
+                      child: Card()),
+                  SizedBox(
+                      width: context.sizeW * 200,
+                      height: context.sizeH * 50,
+                      child: const Card(
+                        child: Center(
+                            child: Text(
+                                'Developing By Ersel Ertekin with Flutter')),
+                      )),
+                ],
+              )),
+        ],
+      ),
     ));
   }
 }

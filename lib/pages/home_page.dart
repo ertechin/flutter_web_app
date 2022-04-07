@@ -11,6 +11,9 @@ class HomePage extends StatelessWidget {
       length: 3,
       child: Scaffold(
           appBar: AppBar(
+            actions: [
+              IconButton(onPressed: () {}, icon: const Icon(Icons.login))
+            ],
             centerTitle: true,
             title: const Text('welcome'),
             bottom: const TabBar(tabs: [
