@@ -23,11 +23,11 @@ class RightSide extends StatelessWidget {
         SizedBox(
             width: context.sizeW * 200,
             height: context.sizeH * 600,
-            child: Card()),
+            child: const Card()),
         SizedBox(
             width: context.sizeW * 200,
             height: context.sizeH * 100,
-            child: Card()),
+            child: const Card()),
         SizedBox(
             width: context.sizeW * 200,
             height: context.sizeH * 50,

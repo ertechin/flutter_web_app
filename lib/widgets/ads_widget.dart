@@ -18,7 +18,7 @@ class AdsCard extends StatelessWidget {
         SizedBox(
             height: context.sizeH * 775,
             width: context.sizeW * 250,
-            child: Card())
+            child: const Card())
       ],
     );
   }

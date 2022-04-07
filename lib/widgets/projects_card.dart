@@ -49,12 +49,12 @@ class ProjectCard extends StatelessWidget {
                         title: Padding(
                           padding:
                               EdgeInsets.fromLTRB(0, 0, 0, context.sizeH * 8),
-                          child: Text('Title'),
+                          child: const Text('Title'),
                         ),
                         subtitle: Padding(
                           padding:
                               EdgeInsets.fromLTRB(0, context.sizeH * 8, 0, 0),
-                          child: Text(
+                          child: const Text(
                               'DescDescDescDescDescDescDescDescDescDescDescDescDescDescDescDescDescDescDescDesc.'),
                         ),
                       ),
@@ -64,7 +64,7 @@ class ProjectCard extends StatelessWidget {
                           0, 0, context.sizeH * 16, context.sizeH * 16),
                       child: TextButton(
                           onPressed: () {},
-                          child: Text('click to see the project')),
+                          child: const Text('click to see the project')),
                     )
                   ],
                 ),

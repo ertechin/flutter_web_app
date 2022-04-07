@@ -13,7 +13,7 @@ class BlogsCard extends StatelessWidget {
           padding: EdgeInsets.all(context.sizeH * 16),
           child: Column(
             children: [
-              SizedBox(height: context.sizeH * 250, child: Placeholder()),
+              SizedBox(height: context.sizeH * 250, child: const Placeholder()),
               SizedBox(height: context.sizeH * 16),
               ListTile(
                 title: Padding(
