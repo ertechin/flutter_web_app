@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_app/controller/main_controller.dart';
 import 'package:flutter_web_app/pages/home_page.dart';
+import 'package:flutter_web_app/pages/m_home_page.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -27,9 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: mc.desktop ? Colors.blue : Colors.green,
       ),
-      home: mc.desktop
-          ? const HomePage()
-          : const Center(child: Text('Comming Soon')),
+      home: mc.desktop ? const HomePage() : const MHomePage(),
     );
   }
 }
