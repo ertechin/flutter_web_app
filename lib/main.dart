@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_web_app/controller/main_controller.dart';
 import 'package:flutter_web_app/pages/home_page.dart';
 import 'package:flutter_web_app/pages/m_home_page.dart';
 import 'package:get/get.dart';
 
-void main() {
+Future main() async {
+  await dotenv.load(fileName: "env");
   runApp(MyApp());
 }
 
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Ersel (ProFuNn) Ertekin',
+      title: 'Ersel (ProFuNn) Ertekin + ${dotenv.env['test']}',
       theme: ThemeData(
         // This is the theme of your application.
         //
